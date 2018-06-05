@@ -10,9 +10,10 @@ function signIn() {
     var pw = $("#user_password").val();
     
     firebase.auth().signInWithEmailAndPassword(id, pw)
-            .then(function() {
+            .then(function(firebaseUser) {
                 $("#signIn").hide();
                 $("#authorized").show();
+                loginSuccess(firebaseUser);
                 location.replace('./main.html');    
             })
             
