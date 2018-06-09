@@ -1,5 +1,5 @@
-  //var firebaseEmailAuth; //파이어베이스email. 인증 모듈 전역변수
-  //var firevaseDatabase; // 파이어베이스 DB 모듈 전역변수
+  var firebaseEmailAuth; //파이어베이스email. 인증 모듈 전역변수
+  var firebaseDatabase; // 파이어베이스 DB 모듈 전역변수
   var userInfo; //가입한 유저의 정보. object타입
 
   // Initialize Firebase with WIZZBELT 
@@ -13,6 +13,6 @@
   };
   firebase.initializeApp(config);
 
-  // firebaseEmailAuth = firebase.auth(); //파이어베이스 인증 객체
-  // firebaseDatabase = firebase.database(); //파이어베이스 데이터베이스 객체
+  firebaseEmailAuth = firebase.auth(); //파이어베이스 인증 객체
+  firebaseDatabase = firebase.database(); //파이어베이스 데이터베이스 객체
 
