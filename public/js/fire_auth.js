@@ -1,11 +1,11 @@
 $(document).ready(function()
 {
-    //가입버튼 눌렀을 때 btn login
+    //가입버튼 눌렀을 때 btn login 0
     $(document).on('click','.login',function()
     {
 /** login firebase 로그인 함수 by.. user_email, user_password */
-        function signIn() 
-        {
+        //function signIn() 
+       // {
             var id = $("#user_email").val();
             var pw = $("#user_password").val();
             
@@ -21,7 +21,7 @@ $(document).ready(function()
                 alert(error + "\n로그인 실패");                
             });
                     
-        }
+       // }
     });
 });
 
@@ -30,16 +30,17 @@ function loginSuccess(firebaseUser)
     alert("로그인 되었습니다.");
 
     //로그인 성공한 유저 ID 확인해 보기 - firebaseDatabase에 접근해 데이터 조회 함수
-    firebaseDatabase.ref("users/"+firebaseUser.uid).once('value').then(function(snapshot)
+    firebaseDatabase.ref("Admin_Profile/"+firebaseUser.uid).once('value').then(function(snapshot)
     {
-        alert(snapshot.val().name)
+        alert(snapshot.val().name);
     }); 
     window.location.href = "./main.html" //로그인 성공, uid 확인 후 main 이동
 
 
 }
 /** logout firebase 로그아웃 함수 */
-function signOut() {
+function signOut() 
+{
     if(!confirm("로그아웃 하시겠습니까?"))
     {
 		return;

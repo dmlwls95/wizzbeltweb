@@ -1,40 +1,40 @@
-[debug] [2018-06-09T08:13:47.937Z] ----------------------------------------------------------------------
-[debug] [2018-06-09T08:13:47.940Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\RaCo0N\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-06-09T08:13:47.940Z] CLI Version:   3.18.4
-[debug] [2018-06-09T08:13:47.940Z] Platform:      win32
-[debug] [2018-06-09T08:13:47.940Z] Node Version:  v8.11.1
-[debug] [2018-06-09T08:13:47.941Z] Time:          Sat Jun 09 2018 17:13:47 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:47.941Z] ----------------------------------------------------------------------
+[debug] [2018-06-09T13:37:57.856Z] ----------------------------------------------------------------------
+[debug] [2018-06-09T13:37:57.856Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\RaCo0N\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-09T13:37:57.856Z] CLI Version:   3.18.4
+[debug] [2018-06-09T13:37:57.856Z] Platform:      win32
+[debug] [2018-06-09T13:37:57.856Z] Node Version:  v8.11.1
+[debug] [2018-06-09T13:37:57.856Z] Time:          Sat Jun 09 2018 22:37:57 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:37:57.856Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-06-09T08:13:47.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-06-09T08:13:47.955Z] > authorizing via signed-in user
-[debug] [2018-06-09T08:13:47.958Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/wizzbelt-90d2b  
+[debug] [2018-06-09T13:37:57.871Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-09T13:37:57.871Z] > authorizing via signed-in user
+[debug] [2018-06-09T13:37:57.871Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/wizzbelt-90d2b  
   
- Sat Jun 09 2018 17:13:47 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:49.166Z] <<< HTTP RESPONSE 200
-[debug] [2018-06-09T08:13:49.166Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/wizzbelt-90d2b/tokens  
+ Sat Jun 09 2018 22:37:57 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:37:59.196Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T13:37:59.196Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/wizzbelt-90d2b/tokens  
   
- Sat Jun 09 2018 17:13:49 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:50.056Z] <<< HTTP RESPONSE 200
-[debug] [2018-06-09T08:13:50.056Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/wizzbelt-90d2b  
+ Sat Jun 09 2018 22:37:59 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:38:00.119Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T13:38:00.119Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/wizzbelt-90d2b  
   
- Sat Jun 09 2018 17:13:50 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:51.396Z] <<< HTTP RESPONSE 200
+ Sat Jun 09 2018 22:38:00 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:38:01.591Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\RaCo0N\Dropbox\wizzbelt project\wizzbelt'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2018-06-09T08:13:52.361Z] Fetching environment
-[debug] [2018-06-09T08:13:52.364Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/432919344129:getServerAppConfig  
+[debug] [2018-06-09T13:38:02.457Z] Fetching environment
+[debug] [2018-06-09T13:38:02.457Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/432919344129:getServerAppConfig  
   
- Sat Jun 09 2018 17:13:52 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:52.365Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/432919344129/clients/_:getWebAppConfig  
+ Sat Jun 09 2018 22:38:02 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:38:02.457Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/432919344129/clients/_:getWebAppConfig  
   
- Sat Jun 09 2018 17:13:52 GMT+0900 (대한민국 표준시)
-[debug] [2018-06-09T08:13:53.221Z] <<< HTTP RESPONSE 200
-[debug] [2018-06-09T08:13:53.221Z] Starting @google-cloud/functions-emulator
-[debug] [2018-06-09T08:13:53.302Z] <<< HTTP RESPONSE 200
+ Sat Jun 09 2018 22:38:02 GMT+0900 (대한민국 표준시)
+[debug] [2018-06-09T13:38:03.522Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-09T13:38:03.523Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-09T13:38:03.828Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
-[debug] [2018-06-09T08:13:55.772Z] Parsing function triggers
+[debug] [2018-06-09T13:38:06.072Z] Parsing function triggers
