@@ -27,18 +27,23 @@ $(document).ready(function()
 
 function loginSuccess(firebaseUser)
 { //로그인 성공시
-    alert("로그인 되었습니다.");
+    //alert("로그인 되었습니다.");
 
     //로그인 성공한 유저 ID 확인해 보기 - firebaseDatabase에 접근해 데이터 조회 함수
     firebaseDatabase.ref("Admin_Profile/"+firebaseUser.uid).once('value').then(function(snapshot)
     {
-        alert(snapshot.val().name);
+        console.log(snapshot.val().Brand_name);
+        alert(snapshot.val().Brand_name +"님이 로그인하였습니다.");
     }); 
     window.location.href = "./main.html" //로그인 성공, uid 확인 후 main 이동
 
 
 }
-/** logout firebase 로그아웃 함수 */
+
+
+
+
+/** logout firebase 로그아웃 함수 아직미구현 */
 function signOut() 
 {
     if(!confirm("로그아웃 하시겠습니까?"))

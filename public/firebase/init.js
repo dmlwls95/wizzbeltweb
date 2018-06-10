@@ -1,6 +1,8 @@
   var firebaseEmailAuth; //파이어베이스email. 인증 모듈 전역변수
   var firebaseDatabase; // 파이어베이스 DB 모듈 전역변수
   var userInfo; //가입한 유저의 정보. object타입
+  var name; // 유저이름(브랜드)
+  var loginUserkey;
 
   // Initialize Firebase with WIZZBELT 
   var config = {
