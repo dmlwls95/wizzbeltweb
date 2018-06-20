@@ -18,7 +18,8 @@ $(document).ready(function()
             
             .catch(function(error) 
             {
-                alert(error + "\n로그인 실패");                
+                alert(error + "\n로그인 실패");  
+                return;              
             });
                     
        // }
@@ -34,6 +35,7 @@ function loginSuccess(firebaseUser)
     {
         console.log(snapshot.val().Brand_name);
         alert(snapshot.val().Brand_name +"님이 로그인하였습니다.");
+        alert("!");
     }); 
     window.location.href = "./main.html" //로그인 성공, uid 확인 후 main 이동
 

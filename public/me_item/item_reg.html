@@ -42,6 +42,9 @@
 	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- Modernizr JS -->
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 	<script src="../js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
@@ -49,7 +52,11 @@
 	<![endif]-->
 
 	<!--firebase input-->
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
 	<script src="//www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="../firebase/init.js"></script>
+	<script src="../js/item_reg.js"></script>
 
 	</head>
 	<body>
@@ -70,11 +77,11 @@
 						<li class="has-dropdown">
 							<a href="product.html">상품 관리</a> <!--item-->
 							<ul class="dropdown">
-								<li><a href="./me_item/item_reg.html">상품등록</a></li> <!--item_reg 새로운 상품 등록-->
-								<li><a href="">승인대기상품</a></li> <!--item_wait 등록 후 포스트 승인대기-->
-								<li><a href="">상품관리</a></li> <!--item_lists 승인된 상품 확인,삭제,수정요청-->
-								<li><a href="">구현대기</a></li>
-								<li><a href="">구현대기</a></li>
+								<li><a href="../me_item/item_reg.html">상품등록</a></li> <!--item_reg 새로운 상품 등록-->
+								<li><a href="1">승인대기상품</a></li> <!--item_wait 등록 후 포스트 승인대기-->
+								<li><a href="1">상품관리</a></li> <!--item_lists 승인된 상품 확인,삭제,수정요청-->
+								<li><a href="1">구현대기</a></li>
+								<li><a href="1">구현대기</a></li>
 							</ul>
 						</li>
 						
@@ -166,7 +173,7 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="noice_on_order" cols="30" rows="4" class="form-control" placeholder="주문시 유의사항"></textarea>
+								<textarea name="message" id="notice_order" cols="30" rows="4" class="form-control" placeholder="주문시 유의사항"></textarea>
 								<span>ex) 특별한 배송기간, 식품의 경우 알레르기 유발 성분</span>
 							</div>
 						</div>
@@ -176,6 +183,7 @@
 									<h4>첨부파일 1</h4>
 							</div>
 							<div class="col-md-6">
+									<span>해당 파일은 썸네일에 사용될 이미지입니다.</span>
 								<!-- <label for="email">Email</label> -->
 								<input type="file" id="file1">
 							</div>
@@ -228,6 +236,13 @@
 						</div>
 
 						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<input name="text" id="youtube_url"  class="form-control" placeholder="Youtube url(선택) (미선택시 0)"></input/>
+							</div>
+						</div>
+
+						<div class="row form-group">
 							<div class="col-md-5">
 								<!-- <label for="fname">First Name</label> -->
 								<input type="text" id="supply_price" class="form-control" placeholder="공급가격">
@@ -238,7 +253,7 @@
 
 							<div class="col-md-5">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="custom_price" class="form-control" placeholder="소비자가격">
+								<input type="text" id="customer_price" class="form-control" placeholder="소비자가격">
 							</div>
 							<div class="col-md-1">
 								<h4><br>원</h4>
@@ -248,7 +263,7 @@
 						<div class="row form-group">
 							<div class="col-md-5">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="origin" class="form-control" placeholder="원산지">
+								<input type="text" id="origin_price" class="form-control" placeholder="원산지">
 							</div>
 							<div class="col-md-1"></div>
 
@@ -259,25 +274,21 @@
 							<div class="col-md-1">
 								<h4><br>g</h4>
 							</div>
-						</div>
-							
-
+						</div>	
 
 						<div class="row form-group">
 							<div class="col-md-12">
 
 							</div>
 						</div>
-
 						
 						<div class="form-group">
-							<input type="submit" value="승인요청" class="btn btn-primary">
+							<input type="submit" id="Request" value="Request" class="btn btn-primary request">
 						</div>
 
 					</form>		
 				</div>
-			</div>
-			
+			</div>			
 		</div>
 	</div>
 
@@ -357,9 +368,6 @@
 	<script src="../js/jquery.countTo.js"></script>
 	<!-- Flexslider -->
 	<script src="../js/jquery.flexslider-min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="../js/google_map.js"></script>
 
 	<!-- Main -->
 	<script src="../js/main.js"></script>
