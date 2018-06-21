@@ -154,7 +154,7 @@
 						<div class="row form-group">
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="brand_name" class="form-control" placeholder="브랜드명(필수)">
+								<input type="text" id="brand_name" class="form-control" readonly placeholder="브랜드명(필수)">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
@@ -164,9 +164,8 @@
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="main_contents" cols="30" rows="10" class="form-control" placeholder="주요상품설명"></textarea>
-								<span>300자 이내로 작성해 주세요.</span>
+								<textarea name="message" id="main_contents" cols="30" rows="10" maxlength="1000" class="form-control" placeholder="주요상품설명"></textarea>	
+								<span>500자 이내로 작성해 주세요.</span>
 							</div>
 						</div>
 
