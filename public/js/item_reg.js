@@ -6,6 +6,25 @@ $(function()
 {
     firebaseEmailAuth.onAuthStateChanged(function (user) //로그인사용자 확인
     {
+
+        
+        firebaseDatabase.ref('Admin_Profile/'+ user.uid).once('value').then(function(snapshot){
+            firebaseDatabase.ref('payment/' + snapshot.val().Brand_name).once('value',function(data){
+                
+                console.log('제발:',data.val());
+                
+            });
+        });
+    
+
+
+       // var rootRef = firebase.database.ref();
+        //var urlRef = rootRef.child("user1/DAA notes/URL");
+        //urlRef.once("value", function(snapshot) {
+            //snapshot.forEach(function(child) {
+            //console.log(child.key+": "+child.val());
+        //});
+
         firebaseDatabase.ref("Admin_Profile/" + user.uid).once('value').then(function (snapshot){
             document.getElementById("brand_name").value = snapshot.val().Brand_name; //brand_name 탭 자동채우기
         });        
@@ -36,7 +55,7 @@ $(function()
                 return;  //제약조건에 걸리면 alert띄우고 리턴
             }
             else{       
-            dorequest(userInfo); //조건 통과시 dorequest로 DB 삽입
+                dorequest(userInfo); //조건 통과시 dorequest로 DB 삽입
             }      
 
             function dorequest(userInfo)

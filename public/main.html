@@ -59,7 +59,6 @@
 
 	</head>
 	<body>
-			
 		<div class="fh5co-loader"></div>
 		
 		<div id="page">
@@ -86,7 +85,7 @@
 							<li class="has-dropdown">
 								<a href="services.html"> 주문 관리</a> <!--order-->
 								<ul class="dropdown">
-									<li><a href="#">신규주문</a></li> <!--order_new 수주받은 새 주문-->
+									<!--o <li><a href="#">신규주문</a></li> rder_new 수주받은 새 주문-->
 									<li><a href="./me_order/order_allpurchase.html">전체주문현황</a></li> <!--order_allpurchase 기간별로 전체주문현황-->
 									<li><a href="#">배송처리현황</a></li> <!--order_report 주문에 대한 배송현황체크, 보고-->
 									<li><a href="#">교환, 반품요청</a></li> <!--order_changeback 교환,반품요청 현황체크 처리현황-->
@@ -139,10 +138,10 @@
 								<i class="icon-box"></i>
 							</span>
 							<div style="padding-bottom: 20px;">
-							<h3>상품 현황</h3>
-							<script style="font-weight: bold;">
-								document.write("등록완료상품 : 3건<br>승인대기상품 : 1건<br>승인거절상품 : 0건");
-							</script>
+								<h3>상품 현황</h3>
+								등록완료상품 : <span id="1_1">1</span>건<br>
+								승인대기상품 : <span id="1_2">1</span>건<br>
+								승인거절상품 : <span id="1_3">1</span>건<br>
 							</div>
 							<p><a href="#" class="btn btn-primary btn-outline">More</a></p> <!--item_lists-->
 						</div> 
@@ -154,10 +153,10 @@
 								<i class="icon-wallet"></i>
 							</span>
 							<div style="padding-bottom: 20px;">
-							<h3>주문 현황</h3>
-							<script>
-								document.write("전월주문량 : 141건<br>금월누적량 : 23건<br>총주문누적 : 324건");
-							</script>
+								<h3>주문 현황</h3>
+								전월주문량 : <span id="2_1">1</span>건<br>
+								금월누적량 : <span id="2_2">1</span>건<br>
+								총주문누적 : <span id="1_3">1</span>건<br>
 							</div>
 							<p><a href="#" class="btn btn-primary btn-outline">More</a></p> <!--order_allpurchase-->
 						</div>
@@ -169,11 +168,10 @@
 								<i class="icon-paper-plane"></i>
 							</span>
 							<div style="padding-bottom: 20px;">
-							<h3>배송 현황</h3>
-							<p></p>
-							<script>
-								document.write("배송미완료 : 6건<br>배송중상품 : 12건<br>금월배송완료 : 21건");
-							</script>
+								<h3>배송 현황</h3>
+								배송미완료 : <span id="3_1">1</span>건<br>
+								배송중상품 : <span id="3_2">1</span>건<br>
+								금월배송완료 : <span id="3_3">1</span>건<br>
 							</div>
 							<p><a href="#" class="btn btn-primary btn-outline">More</a></p> <!--order_report-->
 						</div>
@@ -193,24 +191,22 @@
 					</div>
 				</div>-->
 				<div class="ra_row">
-
+					<!-- 메인페이지 월 매출현황 -->
 					<div class="col-md-6 col-xs-12 text-center animate-box">
 						<div class="product">
 							<div class="product-notice" style="background-image:url(images/product-1.jpg);">
 								<div class="inner">
 									<p>
-										<h3>7월 매출현황</h3>										
+										<h3><span id="4">7</span>월 매출현황</h3>
 										<table class="table" style="margin-top: 50px; margin-left: auto; margin-right: auto; width: 400px; font-family: Montserrat, Arial, sans-serif;">
-											<tbody style="font-size: 150%; cursor: pointer;" onClick = " location.href=' ' " >
+											<tbody style="font-size: 150%; cursor: pointer;" onClick = "location.href=' '">
 												<tr>
-
 													<th style="font-weight: bold;">주문고객</th>
-													<td>156 명</td>
-												
+													<td id="4_1">156 명</td>
 												</tr>
 												<tr>
 													<th style="font-weight: bold;">매출액</th>
-													<td>1,156,400 원</td>
+													<td id="4_2">1,156,400 원</td>
 												
 												</tr>
 												<tr>
@@ -225,7 +221,7 @@
 							</div>
 						</div>
 					</div>
-
+					<!-- 메인페이지 공지사항 -->
 					<div class="col-md-6 col-xs-12 text-center animate-box">
 						<div class="product">
 							<div class="product-notice" style="background-image:url(images/product-2.jpg);">
@@ -319,7 +315,7 @@
 										<i class="icon-shop"></i>
 									</span>
 									<span class="counter js-counter" data-from="0" data-to="700" data-speed="2000" data-refresh-interval="50">1</span>
-									<span class="counter-label">입점</span>
+									<span class="counter-label">물품</span>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6 animate-box">
