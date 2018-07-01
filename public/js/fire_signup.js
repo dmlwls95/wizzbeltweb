@@ -38,7 +38,6 @@ $(document).ready(function(){
                 userInfo = user; // 카입 후 callback 함수로 생성된 유저의 정보가 user에 담겨서 저장 / 전역변수
                 //저장 확인
                 console.log("userInfo/"+userInfo);
-                console.log("userInfo.currentUser/"+userInfo.currentUser);
                 console.log("userInfo.uid/"+userInfo.uid);
 
                 logUser(); // 성공시 작동

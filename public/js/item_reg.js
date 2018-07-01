@@ -7,17 +7,6 @@ $(function()
     firebaseEmailAuth.onAuthStateChanged(function (user) //로그인사용자 확인
     {
 
-        
-        firebaseDatabase.ref('Admin_Profile/'+ user.uid).once('value').then(function(snapshot){
-            firebaseDatabase.ref('payment/' + snapshot.val().Brand_name).once('value',function(data){
-                
-                console.log('제발:',data.val());
-                
-            });
-        });
-    
-
-
        // var rootRef = firebase.database.ref();
         //var urlRef = rootRef.child("user1/DAA notes/URL");
         //urlRef.once("value", function(snapshot) {
