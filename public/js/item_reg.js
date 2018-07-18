@@ -49,7 +49,7 @@ $(function()
 
             function dorequest(userInfo)
             { 
-                firebaseDatabase.ref("SCM_Item_Reg_Request_List/"+ brand_name + "/"+item_name).set(
+                firebaseDatabase.ref("SCM_Item_Reg_Request_List/"+ brand_name + "_"+item_name).set(
                     {   //최상위 디렉터리 SCM_.../item_name
                         D00_request_date: request_date,
                         D00_agreement: agreement,

@@ -1,0 +1,25 @@
+개발자기록
+
+2018-06-17 기록시작
+2018-06-18 login 사용자 식별및 스냅샷 
+2018-06-19 item_reg페이지에 ./js/item_reg.js 추가 (페이지 레퍼런스 -> DB 입력)
+2018-06-20 DB에 승인요청 포스트 등록 구현/ 해당코드 : ./js/item_reg.js, ./firebase/init.js
+2018-06-21 샌드백이 필요해
+2018-06-22 일본으로 도망가야겟다
+2018-06-28 a
+2018-06-30 b
+2018-06-31 c
+2018-07-01 SQL스러운 firebaseDatabase.ref() + 서칭기능 //../me_order/all_purchase form
+2018-07-02 append html 동적삽입, 버전:알파 완성
+2018-07-03 버전:베타 요구사항 및 수정필요사항 작성, 향후 계획 수립 및 수정
+2018-07-15 관리자 전용 로그인 추가, DB에서 GM_Profile 릴레이션 추가. 
+2018-07-16 상품등록의 릴레이션 변경 브랜드명 - 상품명 - 내용 -> 브랜드명+상품명 - 내용 으로 변경
+
+
+Priority(하위 우선순위 프로세스 구동에 필요한 자원은 상위 프로세스 정상종료시 생성되는 자원)
+1. item_reg - firebase storage에 이미지 파일 올리기
+2. GM-USER 간 식별자 고려, index에 GM login form 추가 
+    ///GM은 소수로 구성될 것이니 GM별로 unique값을 줄지 통합 master code를 줄지 고민.
+3. ADMIN page 프론트엔드 작성
+4. ADMIN page 백엔드(item_reg_request 정보 긁어다가 승인대기 상품목록 보여주기)
+5. ADMIN page 백엔드(웹 -> 앱 GM포스터 등록기능)

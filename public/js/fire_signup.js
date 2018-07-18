@@ -54,7 +54,7 @@ $(document).ready(function(){
                     Password: password,
                     Email: email,
                     Name: name,
-                    Brand_name: brand_name,                   
+                    Brand_name: brand_name, 
                 };
                 ref.set(obj); //고유한 자식 키 생성 후 json 삽입
                 
