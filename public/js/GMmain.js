@@ -1,7 +1,7 @@
-//me_order/order_allpurchase
+//GMmain.html
 $(function()
 {
-
+    
     firebaseEmailAuth.onAuthStateChanged(function (user) //로그인사용자 확인
     {
         firebaseDatabase.ref("SCM_Item_Reg_Request_List").orderByChild("D00_agreement").on("child_added" , grab);
@@ -30,10 +30,8 @@ $(function()
         };
     });
 });
-
 function item_confirm(key)
 {
-    alert(key);
-
-    window.open('./order_reg.html','검토','width=650,height=1000,location=no,status=no,scrollbars=yes');
+    window.open('./GM/item_confirm.html','검토','width=650,height=1000,location=no,status=no,scrollbars=yes');
+        
 }
