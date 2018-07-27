@@ -51,7 +51,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 
     <script src="//www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    <script src="../firebase/init.js"></script>
+	<script src="../firebase/init.js"></script>
+	<script src="../js/item_confirm.js"></script>
+
 
 
 </head>
@@ -62,53 +64,57 @@
 			<div class="row">
 				
 				<div class="col-md-10 animate-box" style="padding-left: 20%;">
-					<h3>상품등록 검토</h3>
+					<h3>상품등록 검토</h3> 
+					<h4>요청일자 : 
+						<input type="text" readonly id="request_date">
+					</h4>
 					 
 					<form action="#">
-
 						<div class="row form-group">
 							<div class="col-md-6">
-								<input type="text" id="A" value =d>
-								<script>
-									console.log("var = " + window.name);
-								</script>
+								브랜드명
 								<input type="text" id="brand_name" class="form-control" readonly placeholder="브랜드명(필수)">
 							</div>
+							
 							<div class="col-md-6">
-								<input type="text" id="item_name" class="form-control" placeholder="상품명(필수)">
+								상품명
+								<input type="text" id="item_name" class="form-control" readonly placeholder="상품명(필수)">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								주요상품설명
 								<textarea name="message" id="main_contents" cols="30" rows="10" maxlength="1000" class="form-control" placeholder="주요상품설명"></textarea>	
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								주문시유의사항
 								<textarea name="message" id="notice_order" cols="30" rows="4" class="form-control" placeholder="주문시 유의사항"></textarea>
 							</div>
 						</div>
 
 						<div class="row form-group">							
-							<div class="col-md-2">
+							<div class="col-md-4">
 									<h4>첨부파일 1</h4>
 							</div>
 							<div class="col-md-6">
-									<div>해당 파일은 썸네일에 사용될 이미지입니다.</div>
+									<h5>썸네일에 사용될 이미지</h5>
 							</div>
 														
 						</div>					
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								첨부파일 1의 설명
 								<textarea name="message" id="info_file1" cols="30" rows="3" class="form-control" placeholder="첨부파일 1의 설명"></textarea>
 							</div>
 						</div>
 
 						<div class="row form-group">							
-							<div class="col-md-2">
+							<div class="col-md-4">
 									<h4>첨부파일 2</h4>
 							</div>
 							<div class="col-md-6">
@@ -118,12 +124,13 @@
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								첨부파일 2의 설명
 								<textarea name="message" id="info_file2" cols="30" rows="3" class="form-control" placeholder="첨부파일 2의 설명"></textarea>
 							</div>
 						</div>
 
 						<div class="row form-group">							
-							<div class="col-md-2">
+							<div class="col-md-4">
 									<h4>첨부파일 3</h4>
 							</div>
 							<div class="col-md-6">
@@ -132,33 +139,39 @@
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								첨부파일 3의 설명
 								<textarea name="message" id="info_file3" cols="30" rows="3" class="form-control" placeholder="첨부파일 3의 설명"></textarea>
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
+								Youtube URL
 								<input name="text" id="youtube_url"  class="form-control" placeholder="Youtube url(선택)"></input/>
 							</div>
 						</div>
 
-						<div class="row form-group">
+						<div class="row form-group"> 
 							<div class="col-md-5">
+								소비자가격(￦)
 								<input type="text" id="customer_price" class="form-control" placeholder="소비자가격(필수)">
-                                <span>원</span>
+							
 							</div>
+
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-5">
+								원산지
 								<input type="text" id="item_origin" class="form-control" placeholder="원산지(필수)">
 							</div>
 							<div class="col-md-1"></div>
 
 							<div class="col-md-5">
+								상품무게(kg)
 								<input type="text" id="weight" class="form-control" placeholder="상품무게(필수)">
-								<span>kg</span>
 							</div>
+
 						</div>	
 						
 						<div class="form-group">
