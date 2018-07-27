@@ -17,21 +17,20 @@ $(function()
             
             "<table style=\"font-family: Montserrat, Arial, sans-serif; width:650px; text-align:left;\">" +
                 "<tbody style=\"\">" +
-                    "<td>　" + brand_name + "</td>" +
+                    "<td id = " + data.key + ">　" + brand_name + "</td>" +
                     "<td>　" + item_name + "</td>" +
                     "<td>　" + request_date + "</td>" +
-                    "<td><button id = " + data.key + " onclick=\"item_confirm(\'" + data.key + "\');\">검토하기</button></td>"+
+                    "<td><button id = " + data.key + " onclick=\"item_confirm(\'" + data.key + "\');\">검토하기</button></td>" +
                 "</tbody>" +
             "</table>" +
             "<hr>";
+            console.log(data.key);
     
             $(".waiting").append(html);
-               
         };
     });
 });
-function item_confirm(key)
+function item_confirm(data)
 {
-    window.open('./GM/item_confirm.html','검토','width=650,height=1000,location=no,status=no,scrollbars=yes');
-        
+    var windowObj = window.open('./GM/item_confirm.html',data,'width=650,height=1000,location=no,status=no,scrollbars=yes');
 }

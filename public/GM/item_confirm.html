@@ -1,25 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WIZZBELT.SCM - 승인요청검토</title>
+    <title>Wizzbelt.SCM - GM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Theme style  
+    <link rel="stylesheet" href="../css/style.css">-->
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 
-	<script src="../js/modernizr-2.6.2.min.js"></script>
+    <!--firebase input-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 
-	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-
-	<script src="//www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="//www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script src="../firebase/init.js"></script>
-    <script src="../js/GMmain.js"></script>
 
 
 </head>
 <body>
-        <input type="text" id="a" class="form-control" readonly placeholder="브랜드명(필수)">
-    </body>
+    
+    <div id="fh5co-contact">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-10 animate-box" style="padding-left: 20%;">
+					<h3>상품등록 검토</h3>
+					 
+					<form action="#">
+
+						<div class="row form-group">
+							<div class="col-md-6">
+								<input type="text" id="A" value =d>
+								<script>
+									console.log("var = " + window.name);
+								</script>
+								<input type="text" id="brand_name" class="form-control" readonly placeholder="브랜드명(필수)">
+							</div>
+							<div class="col-md-6">
+								<input type="text" id="item_name" class="form-control" placeholder="상품명(필수)">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="main_contents" cols="30" rows="10" maxlength="1000" class="form-control" placeholder="주요상품설명"></textarea>	
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="notice_order" cols="30" rows="4" class="form-control" placeholder="주문시 유의사항"></textarea>
+							</div>
+						</div>
+
+						<div class="row form-group">							
+							<div class="col-md-2">
+									<h4>첨부파일 1</h4>
+							</div>
+							<div class="col-md-6">
+									<div>해당 파일은 썸네일에 사용될 이미지입니다.</div>
+							</div>
+														
+						</div>					
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="info_file1" cols="30" rows="3" class="form-control" placeholder="첨부파일 1의 설명"></textarea>
+							</div>
+						</div>
+
+						<div class="row form-group">							
+							<div class="col-md-2">
+									<h4>첨부파일 2</h4>
+							</div>
+							<div class="col-md-6">
+							</div>
+														
+						</div>					
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="info_file2" cols="30" rows="3" class="form-control" placeholder="첨부파일 2의 설명"></textarea>
+							</div>
+						</div>
+
+						<div class="row form-group">							
+							<div class="col-md-2">
+									<h4>첨부파일 3</h4>
+							</div>
+							<div class="col-md-6">
+							</div>														
+						</div>					
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<textarea name="message" id="info_file3" cols="30" rows="3" class="form-control" placeholder="첨부파일 3의 설명"></textarea>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<input name="text" id="youtube_url"  class="form-control" placeholder="Youtube url(선택)"></input/>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-5">
+								<input type="text" id="customer_price" class="form-control" placeholder="소비자가격(필수)">
+                                <span>원</span>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-5">
+								<input type="text" id="item_origin" class="form-control" placeholder="원산지(필수)">
+							</div>
+							<div class="col-md-1"></div>
+
+							<div class="col-md-5">
+								<input type="text" id="weight" class="form-control" placeholder="상품무게(필수)">
+								<span>kg</span>
+							</div>
+						</div>	
+						
+						<div class="form-group">
+                            <input type="submit" id="commit" value="승인" class="btn btn-primary commit">
+                            <input type="submit" id="reject" value="거절" class="btn btn-primary reject">
+						</div>
+
+					</form>		
+				</div>
+			</div>			
+		</div>
+	</div>
+</body>
 </html>
